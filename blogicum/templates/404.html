@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена</title>
+    <style>
+      body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .container {
+          text-align: center;
+      }
+
+      .container img {
+          width: 800px;
+          height: auto;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <h1>
+      Упс! Cтраница не найдена
+    </h1>
+    <img src="{% static 'img/404.gif' %}" alt="Loading...">
+    <p>
+      <h3>
+        Попробуйте изменить запрос - возможно, допустили ошибку
+      </h3>
+    </h2>
+    </p>
+  </div>
+</body>
+</html>
